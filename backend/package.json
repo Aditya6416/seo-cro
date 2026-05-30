@@ -10,7 +10,6 @@
   "dependencies": {
     "@google/generative-ai": "^0.15.0",
     "axios": "^1.7.2",
-    "better-sqlite3": "^9.6.0",
     "cheerio": "^1.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
