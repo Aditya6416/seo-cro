@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: seo-cro-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: PORT
+        value: 3001
+    disk:
+      name: sqlite-data
+      mountPath: /data
+      sizeGB: 1

@@ -1,0 +1,12 @@
+{
+  "name": "seo-cro-toolkit-frontend",
+  "version": "2.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}
