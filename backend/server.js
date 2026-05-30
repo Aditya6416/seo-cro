@@ -25,7 +25,7 @@ async function getWorkingModel() {
 }
 
 // ── SQLite cache ───────────────────────────────────────────────
-const DB_PATH = path.join(__dirname, "cache.db");
+const DB_PATH = path.join(process.env.DATA_DIR || __dirname, "cache.db");
 const db = new Database(DB_PATH);
 db.exec(`
   CREATE TABLE IF NOT EXISTS cache (
