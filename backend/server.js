@@ -3,7 +3,6 @@ const cors = require("cors");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const axios = require("axios");
 const cheerio = require("cheerio");
-const Database = require("better-sqlite3");
 const path = require("path");
 require("dotenv").config();
 
