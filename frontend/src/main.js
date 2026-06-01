@@ -23,17 +23,25 @@ window.addEventListener("hashchange", () => {
 });
 
 // ── Dashboard page ─────────────────────────────────────────────
+// ── Dashboard page ─────────────────────────────────────────────
 function renderDashboard() {
   document.getElementById("app").innerHTML = `
     <div class="header">
-      <h1>SEO & CRO Toolkit</h1>
-      <p>AI-powered by Gemini — with live website scraping</p>
+      <div class="logo">
+        <img src="/logo.png" alt="InsiteArc" class="logo-image">
+        <div class="logo-content">
+          <h1>InsiteArc</h1>
+          <p>AI-powered SEO & CRO Intelligence Platform</p>
+        </div>
+      </div>
     </div>
+
     <div class="dashboard-layout">
       <div class="card-grid" id="card-grid"></div>
       <div class="detail-panel" id="detail-panel"></div>
     </div>
   `;
+
   renderCards();
   renderDetail();
 }
